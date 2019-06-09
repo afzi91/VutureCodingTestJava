@@ -28,11 +28,11 @@ public class Tests {
 
         char word = 'e';
         String text = "I have some cheese";
-
+	//expected
         int expected = 5;
 
         int actual = tes.task1(word, text);
-
+	//test
         assertEquals(expected, actual);
     }
 	
@@ -41,7 +41,7 @@ public class Tests {
 
         char word = 'q';
         String text = "I have some cheese";
-        
+        //expected
         int expected = 0;
         // actual
         int actual = tes.task1(word, text);
@@ -53,14 +53,15 @@ public class Tests {
 	    public void task1Test3(){
 	        char word = 'w';
 	        String text = "I have a cat named Meow";
-
+		//expected
 	        int expected = 1;
 	        
 	        int actual = tes.task1(word, text);
-	        
+	        //test
 	        assertEquals(expected, actual);
 	    }
 	 
+	
 	 
 	 /*
 	  * Task 2 tests
@@ -68,18 +69,19 @@ public class Tests {
 	   @Test
 	    public void task2Test1(){
 	        String text = "I have some cheese";
-	        
+	        //test
 	        assertFalse(tes.task2(text));
 	    }
 	   
 	   @Test
 	    public void task2Test2(){
 	        String text = "Radar";
-	        
+	        //test
 	        assertTrue(tes.task2(text));
 	    }
 	   
 	   
+	
 	   /*
 		  * Task 3A tests
 		  */
@@ -89,11 +91,11 @@ public class Tests {
 		   
 	        String [] words = {"dog", "cat", "large"};
 	        String text = "I have a cat named Meow and a dog name Woof. I love the dog a lot. He is larger than a small horse.";
-
+		//expected
 	        String expected = "{cat=1, dog=2, large=1, total=4}";
 
 	        String actual = tes.task3a(words, text);
-
+		//test
 	        assertEquals(expected, actual);
 	    }
 	   
@@ -110,6 +112,9 @@ public class Tests {
 	        assertEquals(expected, actual);
 	    }
 	   
+	
+	
+	
 	   /*
 		  * Task 3B tests
 		  */
@@ -119,27 +124,30 @@ public class Tests {
 
 	        String [] words = {"meow", "cat", "large"};
 	        String text = "I have a cat named Meow and a dog name Woof. I love the dog a lot. He is larger than a small horse.";
-
+		//expected
 	        String expected = "i have a c$t named m$$w and a dog name woof. i love the dog a lot. he is l$$$$r than a small horse.";
 
 	        String actual = tes.task3b(words, text);
-
+		//test
 	        assertEquals(expected, actual);
 	    }
 	   
 	   @Test
 	   public void task3bTest2(){
-	        // setup
+	        
 	        String [] words = {"have", "woof", "love", "small"};
 	        String text = "I have a cat named Meow and a dog name Woof. I love the dog a lot. He is larger than a small horse.";
 	        // expected
 	        String expected = "i h$$e a cat named meow and a dog name w$$$. i l$$e the dog a lot. he is larger than a s$$$l horse.";
-	        // actual
+	        
 	        String actual = tes.task3b(words, text);
 	        // test
 	        assertEquals(expected, actual);
 	    }
 	   
+	
+	
+	
 	   /*
 	    * Task 3B tests
 		*/
@@ -148,11 +156,11 @@ public class Tests {
 	   public void task3cTest1(){
 	        
 	        String text = "Anna went to vote in the election to fulfil her civic duty";
-
+		//expected
 	        String expected = "A$$a went to vote in the election to fulfil her c$$$c duty";
 
 	        String actual = tes.task3c(text);
-
+		//test
 	        assertEquals(expected, actual);
 	    }
 	   
@@ -160,11 +168,11 @@ public class Tests {
 	   public void task3cTest2(){
 	        
 	        String text = "Madam is checking radar to refer Solos and groups";
-
+		//expected
 	        String expected = "M$$$m is checking r$$$r to r$$$r S$$$s and groups";
 
 	        String actual = tes.task3c(text);
-
+		//test
 	        assertEquals(expected, actual);
 	    }
 	   
